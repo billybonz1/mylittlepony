@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta property="og:title" content="" />
+	<meta property="og:url" content=""/>
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content="" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- RESET -->
+	<style>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}</style>
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em; 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+	<!-- FONTS+HEADER -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/header.css">
+	<!-- Load CSS Start -->
+	<!-- <script>loadCSS( "css/fonts.css?ver=1.0.0", false, "all" );</script> -->
+	<!-- <script>loadCSS( "css/header.css?ver=1.0.0", false, "all" );</script> -->
+	<script>loadCSS( "css/main.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "libs/fancyBox/jquery.fancybox.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/main.css">
+	</noscript>
+
+</head>
+
+<body>
+
+
+<div id="block-popup" class="popup-window mfp-hide">
+    <div class="logo">
+        <a href="#">
+            <img src="../img/raster/logo.png" alt="">
+            <p>
+                оригинальные игрушки <span>“My Little Pony”</span>
+            </p>
+        </a>
+    </div>
+    <div class="popup-window__a">
+        <a href="#" class="pony">pony-podarok.ru</a>
+    </div>
+    <div class="clearfix"></div>
+    <h1>
+        спасибо за заказ!
+    </h1>
+    <h5>
+        Мы Вас не подведем!
+    </h5>
+    <h5 class="lowercase">
+        Мы очень стараемся чтобы Вы остались довольны!
+    </h5>
+    <div class="popup-window__block">
+        <h4>
+            Ваш заказ принят и будет исполнен в ближайшее время.
+        </h4>
+        <h4>
+            Мы перезвоним Вам в течении 30 минут, чтобы
+            согласовать время доставки.
+        </h4>
+    </div>
+    <div class="popup-window__item">
+        <p>
+            Номер Вашего заказа - <span>888888888</span>
+        </p>
+        <h4>
+            Наши телефоны  <span>8(495)648-67-51,  8 800-707-02-63</span>
+        </h4>
+    </div>
+</div>
+
+<div id="popupform" class="popupblock mfp-hide">
+    <form class="formblock">
+        <div class="field">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="field">
+            <input type="tel" name="phone" placeholder="Номер телефона" required>
+        </div>
+        <button class="button-overall" name="send">заказать</button>
+    </form>
+</div>
+
+<header>
+    <div class="inner">
+        <div class="header-top">
+            <div class="logo">
+                <a href="#">
+                    <img src="../img/raster/logo.png" alt="">
+                    <p>
+                        оригинальные игрушки <span>“My Little Pony”</span>
+                    </p>
+                </a>
+            </div>
+            <div class="header-top__calls">
+                <div class="header-top__calls__item header-top__calls__item-left">
+                    <h3>
+                        8 800 707 02 63
+                    </h3>
+                    <p>
+                        по России
+                    </p>
+                </div>
+                <div class="header-top__calls__item header-top__calls__item-right">
+                    <h3>
+                        8 (495) 648 67 51
+                    </h3>
+                    <p>
+                        Звоните нам круглосуточно без выходных
+                    </p>
+                    <a href="#popupform" class="yellowbtnradius popup">заказать звонок</a>
+                </div>
+            </div>
+            <div class="header-top__mnu">
+                <ul class="header-top__mnu__ul">
+                    <li>
+                        <a href="#onas" rel="m_PageScroll2id">
+                            о магазине
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#garant" rel="m_PageScroll2id">
+                            гарантия
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#dostavka" rel="m_PageScroll2id">
+                            доставка
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#voprosi" rel="m_PageScroll2id">
+                            вопросы и ответы
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="header__content">
+        <div class="header__content__item header__content__item-left">
+            <div class="header__content__block-left">
+                <div class="header__content__block-left__img">
+                    <img src="img/raster/pony.png" alt="">
+                </div>
+                <div class="header__content__block-left__text">
+                    <h2 class="white">
+                        Пони Пинки Пай
+                    </h2>
+                    <h1>
+                        MY LITTLE PONY
+                    </h1>
+                    <h5 class="tac">
+                        Долгожданная новинка для
+                        Вашей малышки!
+                    </h5>
+                    <h5 class="tal">
+
+                        Интерактивная пони
+                    </h5>
+                    <h5 class="tal">
+                        Развиваем:
+                    </h5>
+                    <ul>
+                        <li>
+                            слух
+                        </li>
+                        <li>
+                            зрение
+                        </li>
+                        <li>
+                            моторику
+                        </li>
+                        <li>
+                            воображение
+                        </li>
+                        <li>
+                            память
+                        </li>
+                    </ul>
+                    <p class="p-price-big">
+                        2400 Р. <span>4000 Р.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="header__content__item">
+            <div class="header__content__item__form">
+                <div class="header__content__item__form-top">
+                    <h3>
+                        заказать со скидкой
+                    </h3>
+                    <div class="header__content__item__form-top__timer">
+                        <p>до конца акции осталось</p>
+                        <script src="http://megatimer.ru/s/18fc3ec98ab47647b79e93821268c5fb.js"></script>
+                    </div>
+                </div>
+                <form class="formblock">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="field">
+                        <input type="tel" name="phone" placeholder="Номер телефона" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="address" placeholder="Адрес доставки" required>
+                    </div>
+                    <button class="button-overall" name="send">заказать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="clients">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            почему более 2 тыс. наших покупателей<br>
+            выбрали “пони пинки пай”
+        </h2>
+        <div class="clients__content">
+            <div class="clients__content__item">
+                <div class="clients__content__item__img play-video">
+                    <img src="../img/raster/littlepony.png" alt="">
+                </div>
+                <h5>
+                    Развивающая игрушка
+                </h5>
+                <p>
+                    Озорная пони умеет ходить и говорить!
+                    “Привет! Я Пинки Пай!”, “Возьми меня на ручки!”,
+                    “Покорми меня!”. Она знает около 20 слов
+                    и фраз и будет разговаривать со своей маленькой
+                    мамой. Ребенок научится заботиться о ней,
+                    понимать ее желания и говорить.
+                </p>
+            </div>
+            <div class="clients__content__item">
+                <div class="clients__content__item__img play-video">
+                    <img src="../img/raster/littlepony.png" alt="">
+                </div>
+                <h5>
+                    Идеальный подарок<br>
+                    для Вашей малышки
+                </h5>
+                <p>
+                    В комплекте красивая подарочная коробка,
+                    зарядные ботарейки, аксессуары.
+                </p>
+            </div>
+            <div class="clients__content__item">
+                <div class="clients__content__item__img">
+                    <img src="../img/raster/eco.png" alt="">
+                </div>
+                <h5>
+                    Качество и экологичность<br>
+                    материалов
+                </h5>
+                <p>
+                    Разработка Hasbro Co - лидер в области
+                    интерактивных игрушек выполнена из
+                    экологичных материалов, безопасных
+                    для маленьких детей.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="met">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            познакомьтесь с игрушкой пони пинки пай
+        </h2>
+        <div class="met__img">
+            <img src="img/raster/girl.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="play">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            Как играть с пони пинки пай
+        </h2>
+        <div class="play__content">
+            <div class="play__content__item">
+                <h5>
+                    Научите малютку ходить
+                </h5>
+                <div class="play__content__item__block play__content__item__block1 youtube play-video" data-video="https://www.youtube.com/watch?v=ma7_qI_Mfrs"></div>
+                <p>
+                    Поставьте ее на ножки и она пойдет!
+                    “Смотри! Я умею ходить!” - скажет она.
+                    Пони Пинки Пай нужно кормить, так как
+                    она может проголодаться и тогда она скажет:
+                    “Хочу кушать!”. Ее можно покормить из
+                    бутылочки или из тарелочки с ложкой.
+                    Ей можно дать соску, чтоб успокоилась.
+                    Ваш ребенок будет заботиться о ней, и Вы
+                    получите смех, веселье и радостное настроение.
+                </p>
+            </div>
+            <div class="play__content__item">
+                <h5>
+                    Пони хочет общаться
+                </h5>
+                <div class="play__content__item__block play__content__item__block2 youtube play-video" data-video="https://www.youtube.com/watch?v=ma7_qI_Mfrs"></div>
+                <p>
+                    Улучшенная Пинки Пай, теперь она
+                    полностью русифицированна: “Привет, я Пинки Пай!”,
+                    “Возьми меня на ручки!”, “Покорми меня!”.
+                    Она знает около 20 слов и фраз и будет
+                    разговаривать со своей маленькой мамой.
+                </p>
+            </div>
+            <div class="play__content__item">
+                <h5>
+                    Позаботьтесь о ней
+                </h5>
+                <div class="play__content__item__block play__content__item__block3 youtube play-video" data-video="https://www.youtube.com/watch?v=ma7_qI_Mfrs"></div>
+                <p>
+                    Плюшевая малютка совсем маленькая.
+                    У нее мягкое плюшевое тельце,
+                    большие красивые глазки и пушистая грива.
+                    Ее можно расчесывать, завязывать бантики.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="buy">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            купить интерактивную пони пинки пай-
+            <span>решение сразу нескольких задач в развитии Вашего ребенка</span>
+        </h2>
+        <div class="buy__content">
+            <h3>
+                Вы развиваете
+            </h3>
+            <div class="buy__content__item buy__content__item1">
+                <div class="buy__content__item__block">
+
+                </div>
+                <p>речь</p>
+            </div>
+            <div class="buy__content__item buy__content__item2">
+                <div class="buy__content__item__block">
+
+                </div>
+                <p>слух</p>
+            </div>
+            <div class="buy__content__item buy__content__item3">
+                <div class="buy__content__item__block">
+
+                </div>
+                <p>моторику</p>
+            </div>
+            <div class="buy__content__item buy__content__item4">
+                <div class="buy__content__item__block">
+
+                </div>
+                <p>память</p>
+            </div>
+            <div class="buy__content__item buy__content__item5">
+                <div class="buy__content__item__block">
+
+                </div>
+                <p>внимание</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="garant" class="present">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            кроме того вы получите в подарок
+        </h2>
+        <div class="present__content">
+            <div class="present__content__item">
+                <img src="img/raster/present.png" alt="">
+                <h5>
+                    1. Гарантию если сломается
+                </h5>
+                <p>
+                    У нас только оригинальная продукция и процент поломок только 3% и мы
+                    лично отвечаем за качество игрушки. И все же если случится поломка,
+                    позвоните нам по номеру +7(495)656-50-40
+                    или 8 800-707-02-63
+                    и мы просто заменим игрушку!
+                    Гарантия на замену в течении 2 месяцев.
+                </p>
+            </div>
+            <div class="present__content__item">
+                <img src="img/raster/present.png" alt="">
+                <h5>
+                    2. Гарантию если не понравится
+                </h5>
+                <p>
+                    Мы понимаем, что игрушку сначала нужно обязательно пощупать,чтобы понять
+                    та ли это игрушка, которую Вы ищите. Если Вам хоть что-то не понравится в
+                    Вашей игрушке в течении 14 дней, мы вернем Ваши деньги за 5 минут без
+                    каких-либо вопросов. Прикоснитесь к миру счастливых родителей. Вы получите
+                    смех, веселье и радостное настроение. Звоните нам прямо сейчас по
+                    телефону +7(495)648-67-51, 8 800-707-02-63
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="char">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            характеристика
+        </h2>
+        <div class="char__content">
+            <div class="char__content__item char__content__item-left">
+                <img src="img/raster/ponypresent.png" alt="">
+            </div>
+            <div class="char__content__item char__content__item-right">
+                <div class="char__content__item__ul">
+                    <ul class="char__content__item__ul-first">
+                        <li>
+                            Возраст
+                        </li>
+                        <li>
+                            Тип игрушки
+                        </li>
+                        <li>
+                            Материал
+                        </li>
+                        <li>
+                            Размер упаковки
+                        </li>
+                        <li>
+                            Размер игрушки
+                        </li>
+                        <li>
+                            Батарейки
+                        </li>
+                        <li>
+                            Вес
+                        </li>
+                        <li>
+                            Комплект
+                        </li>
+                    </ul>
+                    <ul class="char__content__item__ul-second">
+                        <li>
+                            от 3-х лет
+                        </li>
+                        <li>
+                            интерактивная
+                        </li>
+                        <li>
+                            пластик, плюш, текстиль
+                        </li>
+                        <li>
+                            34х15х30см
+                        </li>
+                        <li>
+                            высота - 25см
+                        </li>
+                        <li>
+                            34 х АА/LR6 1.5V ( пальчиковые)
+                        </li>
+                        <li>
+                            1,2 кг
+                        </li>
+                        <li>
+                            малютка пони Пинки Пай, аксессуары
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="superpr">
+    <div class="inner">
+        <h2 class="adaptiveh2 white">
+            успейте купить последние 15 пони по <span>суперцене!</span>
+        </h2>
+        <div class="superpr__content">
+            <form>
+                <div class="field">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="field">
+                    <input type="tel" name="phone" placeholder="Номер телефона" required>
+                </div>
+                <div class="field">
+                    <input type="text" name="address" placeholder="Адрес доставки" required>
+                </div>
+                <button href="#blockform" class="button-overall" name="send">заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="certificate">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            все игрушки сертифицированы
+        </h2>
+        <div class="certificate__content">
+            <div class="certificate__content__item">
+
+            </div>
+            <div class="certificate__content__item">
+
+            </div>
+            <div class="certificate__content__item">
+
+            </div>
+            <div class="certificate__content__item">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="choose">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            почему 300 тыс. наших клиентов выбрали нас:
+        </h2>
+        <div class="choose__content">
+            <ul>
+                <li>
+                    Низкие цены и товар только о официального производителя.<br>
+                    Мы работаем напрямую с производителем, поэтому можем позволить себе акции и низкие цены
+                </li>
+                <li>
+                    Доставка по Москве на следующий день
+                </li>
+                <li>
+                    Быстрая и удобная доставка по России (5-7 дней)
+                </li>
+                <li>
+                    Возможность самовывоза
+                </li>
+                <li>
+                    Гарантия возврата товара в течении 14 дней
+                </li>
+                <li>
+                    100% гарантия и техническое обслуживание на 60 дней.
+                </li>
+            </ul>
+            <h5>
+                общая экономия покупки именно у вас 1200 руб.
+            </h5>
+        </div>
+    </div>
+</div>
+
+<div class="warning">
+    <div class="inner">
+        <h2 class="adaptiveh2 white">
+            остерегайтесь подделок!
+        </h2>
+        <p class="white">
+            У нас игрушки только от официального производителя, так как мы имеем все необходимые сертификаты качества продукции и являемся официальными
+            поставщиками игрушек My Little Pony в России.
+        </p>
+    </div>
+</div>
+
+<div class="product">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            Отзывы о товаре
+        </h2>
+        <div class="product__content">
+            <div class="product__content__item">
+                <img src="img/raster/mannequin.png" alt="">
+                <p>
+                    Марина, Москва
+                </p>
+                <p>
+                    Купили пони в подарок дочери.
+                    Дочь была в восторге от такого
+                    подарка. На самом деле говорит
+                    по-русски! Очень яркая, симпотичная
+                    и смешная игрушка. Не расстается
+                    с ней никогда. Спасибо за отличный
+                    сервис и быструю доставку.
+                </p>
+            </div>
+            <div class="product__content__item">
+                <img src="img/raster/mannequin.png" alt="">
+                <p>
+                    Анна, Екатеринбург
+                </p>
+                <p>
+                    Давно искала дочурке куколку и
+                    нашла пони! Теперь она от нее
+                    не отходит, море эмоций и смеха
+                    как для детей, так и для взрослых.
+                </p>
+            </div>
+            <div class="product__content__item">
+                <img src="img/raster/mannequin.png" alt="">
+                <p>
+                    Сергей, Москва
+                </p>
+                <p>
+                    Купил своей племяннице игрушку
+                    розовую пони. Теперь просит купить
+                    пони с друзьями :). Уже неделю
+                    не выпускает ее из рук. Спасибо
+                    Вам за качественный товар.
+                </p>
+            </div>
+            <div class="product__content__a">
+                <a href="#" class="pinkbtn">еще отзывы</a>
+                <a href="#" class="yellowbtn">написать отзыв</a>
+            </div>
+            <form class="formblock">
+                <div class="field">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="field">
+                    <input type="tel" name="phone" placeholder="Номер телефона" required>
+                </div>
+                <div class="field">
+                    <input type="text" name="address" placeholder="Адрес доставки" required>
+                </div>
+                <p class="p-price">3500 Р. <span>5500 Р</span>.</p>
+                <button class="button-overall" name="send">заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="dostavka" class="cour">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            Покупать у нас просто
+        </h2>
+        <div class="cour__content">
+            <div class="cour__content__item cour__content__item-top cour__content__item-arrowdown">
+                <img src="img/raster/cour1.png" alt="">
+                <p>
+                    Заполните форму и нажмите
+                    кнопку заказать или позвоните
+                    нам по телефону
+                    <span>
+                        +7(495)648-67-51
+                    </span>
+                    <span>
+                        8 800 707-02-63
+                    </span>
+                </p>
+            </div>
+            <div class="cour__content__item cour__content__item-bottom cour__content__item-arrowup">
+                <img src="img/raster/cour2.png" alt="">
+                <p>
+                    Мы согласуем время доставки
+                </p>
+            </div>
+            <div class="cour__content__item cour__content__item-top cour__content__item-arrowdown">
+                <img src="img/raster/cour3.png" alt="">
+                <p>
+                    Наш курьер вовремя привезет Вам заказ.
+                </p>
+            </div>
+            <div class="cour__content__item cour__content__item-bottom cour__content__item-arrowup">
+                <img src="img/raster/cour4.png" alt="">
+                <p>
+                    Вы получаете свой товар
+                    и платите за него курьеру или по почте
+                </p>
+            </div>
+            <div class="cour__content__item cour__content__item-top">
+                <img src="img/raster/cour5.png" alt="">
+                <p>
+                    Вам останется только радоваться
+                    замечательной покупке.
+                </p>
+            </div>
+            <h2 class="adaptiveh2">
+                наша доставка просто супер!
+            </h2>
+            <div class="cour__content__block">
+                <p>
+                    Наш быстрый курьер выедет к Вам на следующий день после
+                    оформления заказа и в тот же день Вы ощутите заветную покупку
+                    у себя в руках!
+                </p>
+                <p class="uppercase p-margin">
+                    Доставка по Москве - 250руб.
+                </p>
+                <p class="uppercase">
+                    Доставка по России в течении 14 дней почтой - 300руб.
+                </p>
+            </div>
+            <div class="cour__content__block">
+                <img src="img/raster/courier.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="shop">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            милости просим в наш магазин
+        </h2>
+        <div class="shop__content">
+            <div class="shop__content__item">
+                <p>
+                    Самовывоз бесплатно! Заберите покупку самостоятельно из нашего
+                    удобного пункта самовывоза. Адрес уточняйте у менеджера.
+                </p>
+                <h5>
+                    Рады Вас видеть с 9:00 до 19:00
+                    Найти нас очень легко!
+                </h5>
+            </div>
+            <div class="shop__content__item">
+                <img src="img/raster/map.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="onas" class="words">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            Пару слов о нас
+        </h2>
+        <div class="words__content">
+            <p class="words__content_width">
+                Наш магазин специализируется на продаже умных и добрых развивающих игрушек для детей младшего возраста.
+                Мы постоянно следим за новинками. Наши специалисты обладают всеми необходимыми знаниями, чтобы помочь сделать правильный выбор.
+                Наши сотрудники:
+            </p>
+            <div class="words__content__block">
+                <div class="words__content__block-left">
+                    <img src="img/raster/word1.png" alt="">
+                    <img src="img/raster/word2.png" alt="">
+                    <img src="img/raster/word3.png" alt="">
+                    <img src="img/raster/word4.png" alt="">
+                </div>
+                <div class="words__content__block-right">
+                    <p>
+                        Мы предлагаем оригинальные игрушки только официальных производителей: Hasbro, Lego, Rastar, AB toys.
+                        Покупая игрушки у нас, вы получаете скидки и бонусы, а также бесплатные консультации. Наша задача - помочь Вам
+                        сделать правильный выбор! Наши гарантии - улыбки и отзывы наших счастливых клиентов, родителей и детей, которые
+                        Вы можете прочитать на нашем сайте. Чтобы купить игрушку в нашем интернет магазине у Вас уйдет несколько минут
+                        и мы быстро доставим ее Вам.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="voprosi" class="answer">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            оТВЕТЫ НА вАШИ ВОПРОСЫ
+        </h2>
+        <div class="answer__content">
+            <div class="answer__content_white answer__content_overall">
+                <h5>
+                    А если товар не понравится мне?
+                </h5>
+            </div>
+            <div class="answer__content_grey answer__content_overall">
+                <h5>
+                    Мы пришлем курьера и без каких либо проблем вернем Вам деньги за 5 минут. Но у нас есть одно условие,
+                    принимаем без механических повреждений и с целой упаковкой.
+                </h5>
+            </div>
+            <div class="answer__content_white answer__content_overall">
+                <h5>
+                    А если сломается?
+                </h5>
+            </div>
+            <div class="answer__content_grey answer__content_overall">
+                <h5>
+                    Позвоните нам по номеру +7(495)648-67-51 или 8 800-707-02-63 и мы решим Вашу проблему в течении 5 минут! Гарантируем полную техническую поддержку и ремонт в течении 60 дней.
+                </h5>
+            </div>
+            <div class="answer__content_white answer__content_overall">
+                <h5>
+                    А это не подделка?
+                </h5>
+            </div>
+            <div class="answer__content_grey answer__content_overall">
+                <h5>
+                    Мы официальные поставщики игрушек Hasbro Co чему свидетельствуют все необходимые сертификаты качества продукции.
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="think">
+    <div class="inner">
+        <h2 class="adaptiveh2">
+            и вы до сих пор думаете?
+        </h2>
+        <div class="think__content">
+            <h5>
+                Заказывайте, экономьте до 1200 руб. и прикоснитесь к миру счастливых родителей!
+            </h5>
+            <h5 class="think__content-h5">
+                Почувствуйте новые эмоции, радость и смех вашего ребенка!
+                сделайте замечательный сюрприз и развивающий подарок вашему...
+            </h5>
+            <form class="formblock">
+                <div class="field">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="field">
+                    <input type="tel" name="phone" placeholder="Номер телефона" required>
+                </div>
+                <div class="field">
+                    <input type="text" name="address" placeholder="Адрес доставки" required>
+                </div>
+                <p class="p-price">3500 Р. <span>5500 Р</span>.</p>
+                <button class="button-overall" name="send">заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer__top-line">
+        <div class="logo">
+            <a href="#">
+                <p>
+                    оригинальные игрушки <span>“My Little Pony”</span>
+                </p>
+            </a>
+        </div>
+        <div class="header-top__mnu">
+            <ul class="header-top__mnu__ul">
+                <li>
+                    <a href="#onas" rel="m_PageScroll2id">
+                        о магазине
+                    </a>
+                </li>
+                <li>
+                    <a href="#garant" rel="m_PageScroll2id">
+                        гарантия
+                    </a>
+                </li>
+                <li>
+                    <a href="#dostavka" rel="m_PageScroll2id">
+                        доставка
+                    </a>
+                </li>
+                <li>
+                    <a href="#voprosi" rel="m_PageScroll2id">
+                        вопросы и ответы
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-top__calls">
+            <div class="header-top__calls__item header-top__calls__item-right">
+                <h3>
+                    8 (495) 648 67 51
+                </h3>
+                <p>
+                    Звоните нам круглосуточно без выходных
+                </p>
+            </div>
+            <div class="header-top__calls__item header-top__calls__item-left">
+                <h3>
+                    8 800 707 02 63
+                </h3>
+                <p>
+                    по России
+                </p>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="footer__content">
+        <div class="footer__content__block">
+            <div class="footer__content__block__p">
+                <p>
+                    Веселая маленькая пони из мультфильма.  Пони- самая популярная игрушка для девочек. Проверено детьми! Меховая пони очень ласковая и умная, у нее красивые большие глазки и кудрявая пушистая грива, изображение воздушных шариков на одежде подчеркивает ее веселый нрав.
+                </p>
+                <p>
+                    Малышка только учится ходить. Ей нужна Ваша помощь и забота! Поставьте ее на ножки и она пойдет! !Смотри! Я умею ходить!” - скажет она. Пинки Пай нужно кормить, так как она может проголодаться, и тогда она может сказать: “Хочу кушать!” - ее можно покормить из тарелочки с ложечкой. Ей можно дать соску, чтобы успокоить. Ваш ребенок будет заботиться о ней, и вы получите смех, веселье и радостное настроение. Прикоснитесь к миру счастливых родителей!
+                </p>
+            </div>
+            <div class="footer__content__block__item-left youtube play-video" data-video="https://www.youtube.com/watch?v=ma7_qI_Mfrs"></div>
+            <div class="footer__content__block__item-right">
+                <p>
+                    Подарок Вашему ребенку? Улучшенная Пинки Пай, теперь она полностью русифицирована: “Привет, я Пинки Пай”!, “Возьми меня на ручки!”. Она знает около 20 слов
+                    и фраз и будет разговаривать со своей маленькой мамой.
+                    Как известно, развитие мышления у ребенка закладывается в самом раннем возрасте. Пони Пинки Пай научит ребенка говорить, выражать свои желания, логически мыслить. Игра с пони разовьет мелкую моторику рук, что, как экспертно
+                    доказано, способствует развитию мозга, помогает ребенку овладеть практическими повседневными навыками, проявит творческие наклонности, а также поможет успешно ориентироваться в детском коллективе.
+                    Вы можете приобрести Пинки Пай и все, что необходимо ей в комплекте: друзей пони, аксессуары, игрушечную мебель и посуду для ее маленького домика. В нашем интернет магазине Вы можете купить Пинки Пай по самым привлекательным ценам!
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Fregat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FregatRegular/Fregat_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FregatRegular/Fregat_regular.woff") format("woff"), url("../fonts/FregatRegular/Fregat_regular.ttf") format("truetype"), url("../fonts/FregatRegular/Fregat_regular.svg#Fregat") format("svg"); }
+
+@font-face {
+  font-family: "Fregat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/FregatBold/Fregat_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FregatBold/Fregat_bold.woff") format("woff"), url("../fonts/FregatBold/Fregat_bold.ttf") format("truetype"), url("../fonts/FregatBold/Fregat_bold.svg#Fregat") format("svg"); }
+
+@font-face {
+  font-family: "Fregat";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/FregatItalic/Fregat_italic.eot?#iefix") format("embedded-opentype"), url("../fonts/FregatItalic/Fregat_italic.woff") format("woff"), url("../fonts/FregatItalic/Fregat_italic.ttf") format("truetype"), url("../fonts/FregatItalic/Fregat_italic.svg#Fregat") format("svg"); }
+
+@font-face {
+  font-family: "Fregat";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/FregatBoldItalic/Fregat_bold_italic.eot?#iefix") format("embedded-opentype"), url("../fonts/FregatBoldItalic/Fregat_bold_italic.woff") format("woff"), url("../fonts/FregatBoldItalic/Fregat_bold_italic.ttf") format("truetype"), url("../fonts/FregatBoldItalic/Fregat_bold_italic.svg#Fregat") format("svg"); }
+
+@font-face {
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/LobsterRegular/Lobster-Regular_0.eot?#iefix") format("embedded-opentype"), url("../fonts/LobsterRegular/Lobster-Regular_0.woff") format("woff"), url("../fonts/LobsterRegular/Lobster-Regular_0.ttf") format("truetype"), url("../fonts/LobsterRegular/Lobster-Regular_0.svg#Lobster") format("svg"); }

@@ -1,0 +1,172 @@
+@import url(../libs/magnific-popup/dist/magnific-popup.css);
+body {
+  font-family: 'Fregat'; }
+
+.header-top {
+  padding-bottom: 10px; }
+
+.logo {
+  padding-top: 5px;
+  width: 320px;
+  display: inline-block; }
+  .logo img {
+    margin-right: 10px; }
+  .logo p {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    color: #e4066e;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-top: 10px; }
+    .logo p span {
+      text-transform: capitalize; }
+
+.header-top__mnu__ul {
+  margin-left: 66px;
+  margin-top: 11px; }
+  .header-top__mnu__ul li {
+    float: left;
+    margin-left: 90px; }
+    .header-top__mnu__ul li a {
+      color: #000000;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+      -webkit-transition: .2s all;
+      transition: .2s all; }
+      .header-top__mnu__ul li a:hover {
+        color: #e4066e; }
+
+.header-top__calls {
+  display: inline-block;
+  vertical-align: top;
+  float: right; }
+
+.header-top__calls__item {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px; }
+  .header-top__calls__item h3 {
+    color: #ff004e;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px; }
+  .header-top__calls__item p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; }
+
+.header-top__calls__item-left {
+  text-align: center; }
+
+.header-top__calls__item-right {
+  text-align: right;
+  margin-left: 30px;
+  margin-right: 10px; }
+  .header-top__calls__item-right p {
+    padding-bottom: 5px; }
+
+.header__content {
+  background-image: url("../img/raster/bgpink.png");
+  background-size: cover;
+  height: 739px; }
+
+.header__content__block-left .header__content__block-left__img {
+  display: inline-block;
+  width: 590px;
+  height: 739px;
+  vertical-align: top; }
+
+.header__content__block-left .header__content__block-left__text {
+  display: inline-block;
+  vertical-align: top; }
+  .header__content__block-left .header__content__block-left__text h2 {
+    text-transform: capitalize;
+    text-align: left;
+    padding-bottom: 0;
+    position: relative;
+    left: -100px; }
+  .header__content__block-left .header__content__block-left__text h1 {
+    color: #ffea00;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: left;
+    position: relative;
+    left: -25px;
+    padding-top: 30px; }
+  .header__content__block-left .header__content__block-left__text h5 {
+    width: 360px; }
+    .header__content__block-left .header__content__block-left__text h5.tac {
+      text-align: center;
+      padding-top: 20px; }
+    .header__content__block-left .header__content__block-left__text h5.tal {
+      text-align: left;
+      padding-left: 18px; }
+  .header__content__block-left .header__content__block-left__text ul {
+    margin-left: 61px;
+    margin-top: 10px; }
+    .header__content__block-left .header__content__block-left__text ul li {
+      color: #000000;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 48px;
+      padding-left: 15px;
+      position: relative; }
+      .header__content__block-left .header__content__block-left__text ul li:after {
+        content: '';
+        position: absolute;
+        background-image: url("../img/raster/star.png");
+        width: 42px;
+        height: 39px;
+        top: 4px;
+        left: -50px; }
+  .header__content__block-left .header__content__block-left__text .p-price-big {
+    padding-top: 30px;
+    padding-left: 15px; }
+
+.header__content__item {
+  display: inline-block;
+  vertical-align: top; }
+
+.header__content__item__form .header__content__item__form-top {
+  width: 455px;
+  height: auto;
+  padding-bottom: 50px;
+  background-color: #fb477e; }
+  .header__content__item__form .header__content__item__form-top h3 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 55px; }
+
+.header__content__item__form .formblock button {
+  margin: 0px 75px;
+  margin-top: 75px;
+  margin-bottom: 45px; }
+
+.header__content__item__form .formblock input {
+  margin-top: 40px; }
+
+.header__content__item__form-top__timer {
+  margin-top: 20px; }
+  .header__content__item__form-top__timer p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center; }
+
+.header__content__item__form-top__timer > #timer18fc3ec98ab47647b79e93821268c5fb > #timer-text-18fc3ec98ab47647b79e93821268c5fb-days, #timer-number-18fc3ec98ab47647b79e93821268c5fb-days {
+  color: #fff !important; }

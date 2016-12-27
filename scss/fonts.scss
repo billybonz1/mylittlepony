@@ -1,0 +1,8 @@
+@import "bourbon";
+
+
+@include font-face("Fregat", "../fonts/FregatRegular/Fregat_regular", 400 , $file-formats: eot woff ttf svg);
+@include font-face("Fregat", "../fonts/FregatBold/Fregat_bold", 700, $file-formats: eot woff ttf svg);
+@include font-face("Fregat", "../fonts/FregatItalic/Fregat_italic", 400 , italic , $file-formats: eot woff ttf svg);
+@include font-face("Fregat", "../fonts/FregatBoldItalic/Fregat_bold_italic", 700 , italic , $file-formats: eot woff ttf svg);
+@include font-face("Lobster", "../fonts/LobsterRegular/Lobster-Regular_0", 400, $file-formats: eot woff ttf svg);
