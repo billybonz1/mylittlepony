@@ -31,6 +31,7 @@ body{
   }
 }
 .header-top__mnu__ul{
+  position: relative;
   margin-left: 66px;
   margin-top: 11px;
   li{
@@ -86,6 +87,7 @@ body{
   background-image: url("../img/raster/bgpink.png");
   background-size: cover;
   height: 739px;
+  text-align: center;
 }
 .header__content__block-left{
   .header__content__block-left__img{
@@ -136,6 +138,7 @@ body{
         line-height: 48px;
         padding-left: 15px;
         position: relative;
+        text-align: left;
         &:after{
           content: '';
           position: absolute;
@@ -159,6 +162,7 @@ body{
   vertical-align: top;
 }
 .header__content__item__form{
+  margin-right: 97px;
   .header__content__item__form-top{
     width: 455px;
     height: auto;
@@ -176,7 +180,7 @@ body{
   }
   .formblock{
     button{
-      margin: 0px 75px;
+      margin: 0px 90px;
       margin-top: 75px;
       margin-bottom: 45px;
     }
@@ -199,9 +203,86 @@ body{
 .header__content__item__form-top__timer>#timer18fc3ec98ab47647b79e93821268c5fb>#timer-text-18fc3ec98ab47647b79e93821268c5fb-days, #timer-number-18fc3ec98ab47647b79e93821268c5fb-days{
   color: #fff !important;
 }
+.gamburger{
+  display: none;
+  width: 55px;
+  position: relative;
+  margin: 35px auto;
+  span{
+    display: block;
+    width: 100%;
+    height: 6px;
+    margin-bottom: 10px;
+    background: #000;
+  }
+}
+@media only screen and (max-width : 805px) {
+  .gamburger {
+    display: block;
+    span {
+      transition: .4s all;
+    }
+    &.active {
 
+      span:first-child {
+        transform: rotate(45deg) translateX(11px) translateY(11px);
+      }
+      span:nth-child(2) {
+        transform: rotate(-45deg) translateX(-1px) translateY(0px);
+      }
+      span:last-child {
+        opacity: 0;
+      }
+    }
+  }
+  .header-top__mnu__ul{
+    display: none;
+  }
+  .header-top__mnu__ul{
+    li {
+      margin-bottom: 28px;
+    }
+  }
+  .header-top {
+    padding-bottom: 5px !important;
+  }
+  .header-top__calls{
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width : 992px) {
+  footer{
+    .gamburger {
+      display: block;
+      span {
+        transition: .4s all;
+      }
+      &.active {
 
-
+        span:first-child {
+          transform: rotate(45deg) translateX(11px) translateY(11px);
+        }
+        span:nth-child(2) {
+          transform: rotate(-45deg) translateX(-1px) translateY(0px);
+        }
+        span:last-child {
+          opacity: 0;
+        }
+      }
+    }
+    .header-top__mnu__ul{
+      display: none;
+    }
+    .header-top__mnu__ul{
+      li {
+        margin-bottom: 28px !important;
+      }
+    }
+    .header-top {
+      padding-bottom: 5px !important;
+    }
+  }
+}
 
 
 

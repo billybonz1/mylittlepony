@@ -4,6 +4,14 @@
 
 
 
+@media only screen and (max-width: 1600px){
+  .header__content__item__form{
+    margin-right: 0px;
+  }
+  .footer__content__block__p {
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 1472px){
   .header__content{
     height: inherit;
@@ -19,8 +27,8 @@
   .header__content__item-left{
     width: 1095px;
   }
-  .header__content__item__form{
-    margin-top: 50px;
+  .header__content__item__form {
+    margin-top: 90px;
   }
   .footer__top-line{
     .logo{
@@ -79,6 +87,12 @@
   .buy{
     height: auto;
   }
+  .footer__top-line .header-top__calls {
+    margin-left: 20px;
+  }
+  .footer__top-line .header-top__mnu .header-top__mnu__ul li {
+    margin-left: 25px;
+  }
 }
 
 @media only screen and (max-width: 1355px) {
@@ -130,9 +144,6 @@
   .footer__top-line{
     .logo {
       margin-left: 85px;
-    }
-    .header-top__calls{
-      margin-left: 45px;
     }
     .header-top__mnu{
       .header-top__mnu__ul{
@@ -192,6 +203,9 @@
       font-size: 20px;
     }
   }
+  .footer__top-line .header-top__calls {
+    margin-right: 0px;
+  }
 }
 @media only screen and (max-width: 1155px){
   .superpr__content input {
@@ -224,7 +238,7 @@
     }
   }
   .header-top__calls {
-    margin-right: 30px;
+    margin-right: 50px;
   }
   .logo {
     margin-left: 45px;
@@ -310,6 +324,9 @@
       }
     }
   }
+  .header__content__block-left .header__content__block-left__text ul li {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 1064px){
@@ -350,9 +367,7 @@
     display: block;
     text-align: center;
   }
-  .header-top__calls {
-    margin-right: 85px;
-  }
+
   .header-top__mnu__ul {
     margin-left: 162px;
     margin-top: 35px;
@@ -363,7 +378,7 @@
     }
   }
   .header-top {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .adaptiveh2{
     font-size: 38px;
@@ -501,7 +516,6 @@
     float: none;
     margin: 0 auto;
     margin-top: 25px;
-    width: 320px;
     .header-top__calls__item {
       text-align: center;
       margin-bottom: 10px;
