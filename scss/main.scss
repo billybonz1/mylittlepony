@@ -41,6 +41,13 @@
 .play__content__item__block{
   width: 319px;
   height: 263px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.padding{
+  padding-top: 100px!important;
 }
 .play__content__item{
   width: 330px;
@@ -630,6 +637,19 @@
     transition: .3s all;
   }
 }
+.block-pravki{
+  background-image: url("../img/raster/bgpravki.png");
+  background-size: cover;
+  height: 740px;
+  margin-top: 40px;
+  text-align: center;
+  img{
+    position: relative;
+    top: -60px;
+  }
+}
+
+
 
 
 

@@ -156,8 +156,8 @@ body {
       padding-top: 55px; }
   .header__content__item__form .formblock button {
     margin: 0px 90px;
-    margin-top: 75px;
-    margin-bottom: 45px; }
+    margin-top: 20px;
+    margin-bottom: 30px; }
   .header__content__item__form .formblock input {
     margin-top: 40px; }
 
@@ -186,7 +186,7 @@ body {
     margin-bottom: 10px;
     background: #000; }
 
-@media only screen and (max-width: 805px) {
+@media only screen and (max-width: 992px) {
   .gamburger {
     display: block; }
     .gamburger span {
@@ -233,3 +233,30 @@ body {
     margin-bottom: 28px !important; }
   footer .header-top {
     padding-bottom: 5px !important; } }
+
+.header-top__calls-pravki {
+  display: inline-block;
+  vertical-align: top; }
+
+.header-top__calls-pravki__item {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 13px;
+  margin-left: 7px; }
+  .header-top__calls-pravki__item p {
+    display: inline-block; }
+  .header-top__calls-pravki__item p {
+    color: #ff004e;
+    font-family: Fregat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px; }
+  .header-top__calls-pravki__item .span-padding {
+    padding-left: 35px; }
+
+.header-top__calls-pravki__item-right p {
+  color: #000000;
+  font-family: Fregat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; }

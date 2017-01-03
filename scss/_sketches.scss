@@ -48,7 +48,10 @@ a{
     text-transform: uppercase;
     border-radius: 15px;
     background-color: #ffea00;
-    padding: 11px 33px;
+    display: block;
+    width: 268px;
+    height: 45px;
+    text-align: center;
     transition: .5s all;
     box-shadow: 0 4px 2px -2px gray;
     &:hover{

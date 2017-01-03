@@ -176,6 +176,9 @@
   .certificate__content__item {
     margin: 25px 85px;
   }
+  .header-top__calls-pravki__item{
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1217px){
@@ -193,11 +196,6 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .header-top__mnu__ul {
-    li {
-      margin-left: 30px;
-    }
-  }
   .answer__content_overall{
     h5{
       font-size: 20px;
@@ -208,6 +206,14 @@
   }
 }
 @media only screen and (max-width: 1155px){
+  .block-pravki{
+    height: auto;
+    img {
+      position: relative;
+      top: 0px;
+      width: 100%;
+    }
+  }
   .superpr__content input {
     margin: 15px 210px;
   }
@@ -224,16 +230,18 @@
 }
 
 @media only screen and (max-width: 1120px) {
-  .header-top__mnu__ul {
-    width: 228px;
-    text-align: center;
-    margin-left: 79px;
-    li {
-      margin-left: 0px;
-      margin-top: 10px;
-      float: none;
-      a {
-        font-size: 20px;
+  footer{
+    .header-top__mnu__ul {
+      width: 228px;
+      text-align: center;
+      margin-left: 79px;
+      li {
+        margin-left: 0px;
+        margin-top: 10px;
+        float: none;
+        a {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -353,6 +361,9 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .header-top__calls-pravki__item .span-padding {
+    padding-left: 0;
+  }
   .certificate {
     padding-bottom: 0px;
   }
@@ -367,13 +378,30 @@
     display: block;
     text-align: center;
   }
-
+  .header-top__calls-pravki {
+    display: block;
+    margin: 20px auto;
+    width: 290px;
+    text-align: center;
+    a.yellowbtnradius {
+      margin: 0 auto;
+    }
+  }
+  .header-top__calls-pravki__item {
+    display: block;
+    margin: 0 auto;
+    width: 229px;
+  }
   .header-top__mnu__ul {
-    margin-left: 162px;
-    margin-top: 35px;
+    margin: 0 auto;
+    width: 300px;
     li {
+      float: none;
+      text-align: center;
+      margin-left: 0;
       a {
         font-size: 25px;
+        text-align: center;
       }
     }
   }
@@ -487,6 +515,9 @@
     p{
       padding-top: 35px;
     }
+  }
+  .padding{
+    padding-top: 40px!important;
   }
 }
 
