@@ -192,11 +192,16 @@
   text-align: center; }
 
 .certificate__content__item {
-  width: 251px;
-  height: 251px;
+  width: 200px;
+  height: 250px;
   background-color: #57b2ca;
   display: inline-block;
-  margin: 25px 30px; }
+  margin: 25px 30px;
+  cursor: pointer; }
+  .certificate__content__item img {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
 
 .choose {
   padding-bottom: 25px; }
@@ -420,7 +425,6 @@
     margin-right: 85px; }
 
 .footer__content {
-  padding-bottom: 200px;
   text-align: center; }
   .footer__content p {
     text-align: left; }
@@ -563,6 +567,13 @@
   .block-pravki img {
     position: relative;
     top: -60px; }
+
+.recall {
+  padding-bottom: 50px; }
+  .recall .recall__block {
+    margin: 0 120px; }
+  .recall h5 {
+    padding-top: 20px; }
 
 @media only screen and (max-width: 1600px) {
   .header__content__item__form {
@@ -1006,6 +1017,10 @@
     padding-top: 15px; } }
 
 @media only screen and (max-width: 480px) {
+  .header__content__item__form-top__timer > div {
+    min-width: unset !important;
+    max-width: 230px;
+    margin: 0 auto; }
   body .formblock {
     width: 380px; }
     body .formblock p {
@@ -1277,10 +1292,10 @@ h5 {
   font-weight: 700;
   line-height: 48px;
   text-transform: uppercase; }
-  .p-price span {
+  .p-price .cherta {
     font-size: 30px;
     position: relative; }
-    .p-price span:after {
+    .p-price .cherta:after {
       content: '';
       position: absolute;
       width: 108px;

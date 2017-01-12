@@ -52,7 +52,14 @@ $(function() {
         });
     });
 
-
+    $(".certificate__content__item a").each(function () {
+        $(this).magnificPopup({
+            type: 'image',
+            gallery:{
+                enabled:true
+            }
+        });
+    });
 
 });
 
@@ -116,7 +123,7 @@ $(function() {
                     });
 
                     if(subject == "Заказать звонок"){
-                        $("a[href='#popupty']").click();
+                        $("a[href='#popupthx']").click();
                     }else{
                         $("a[href='#block-popup']").click();
                     }

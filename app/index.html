@@ -17,8 +17,8 @@
 	<meta property="og:description" content="" />
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1500, initial-scale=1, maximum-scale=1">
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <!--<meta content="width=device-width, initial-scale=1" name="viewport"/>-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
 
@@ -54,7 +54,7 @@
 
 </head>
 
-<body>
+<body id="all">
 
 <a href="#block-popup" class="popup"></a>
 <div id="block-popup" class="popup-window mfp-hide">
@@ -99,31 +99,37 @@
 </div>
 <a href="#popupty" class="popup"></a>
 <div id="popupty" class="popup-window mfp-hide">
-    <div class="logo">
-        <a href="#">
-            <img src="img/raster/logo.png" alt="">
-            <p>
-                оригинальные игрушки <span>“My Little Pony”</span>
-            </p>
-        </a>
+    <div class="inner">
+        <div class="logo">
+            <a href="#">
+                <img src="img/raster/logo.png" alt="">
+                <p>
+                    оригинальные игрушки <span>“My Little Pony”</span>
+                </p>
+            </a>
+        </div>
+        <div class="popup-window__a">
+            <a href="#" class="pony">pony-podarok.ru</a>
+        </div>
+        <div class="clearfix"></div>
+        <h1>
+            спасибо за заказ!
+        </h1>
+        <h5>
+            Мы Вас не подведем!
+        </h5>
+        <h5 class="lowercase">
+            Мы очень стараемся чтобы Вы остались довольны!
+        </h5>
     </div>
-    <div class="popup-window__a">
-        <a href="#" class="pony">pony-podarok.ru</a>
     </div>
-    <div class="clearfix"></div>
-    <h1>
-        спасибо за заказ!
-    </h1>
-    <h5>
-        Мы Вас не подведем!
-    </h5>
-    <h5 class="lowercase">
-        Мы очень стараемся чтобы Вы остались довольны!
-    </h5>
-</div>
+
 
 <div id="popupform" class="popupblock mfp-hide">
     <form class="formblock">
+        <input type="hidden" name="project_name" value="mylittlepony">
+        <input type="hidden" name="admin_email" value="bux-center@ya.ru">
+        <input type="hidden" name="form_subject" value="Заявка на звонок">
         <div class="field">
             <input type="text" name="name" placeholder="Ваше имя" required>
         </div>
@@ -225,9 +231,9 @@
                             память
                         </li>
                     </ul>
-                    <p class="p-price-big">
-                        2400 Р. <span>4000 Р.</span>
-                    </p>
+                    <!--<p class="p-price-big">-->
+                        <!--2400 Р. <span>4000 Р.</span>-->
+                    <!--</p>-->
                 </div>
             </div>
         </div>
@@ -239,7 +245,7 @@
                     </h3>
                     <div class="header__content__item__form-top__timer">
                         <p>до конца акции осталось</p>
-                        <script src="http://megatimer.ru/s/18fc3ec98ab47647b79e93821268c5fb.js"></script>
+                        <script src="http://megatimer.ru/s/a19167a86fccf0614a6eeeef12bce67c.js"></script>
                     </div>
                 </div>
                 <form class="formblock">
@@ -255,7 +261,7 @@
                     <div class="field">
                         <input type="text" name="address" placeholder="Адрес доставки" required>
                     </div>
-                    <p class="p-price">3130 Р. <span>3900 Р</span>.</p>
+                    <p class="p-price"><span class="pricepadding">3</span>130 Р. <span class="cherta">3900 Р</span>.</p>
                     <button class="button-overall" name="send">заказать</button>
                 </form>
             </div>
@@ -302,7 +308,7 @@
                     материалов
                 </h5>
                 <p>
-                    Разработка My Little Pony – лидера в области и тд.
+                    Разработка My Little Pony Сo – лидера в области  интерактивных игрушек, выполнена из экологичных материалов безопасных для маленьких детей.
                 </p>
             </div>
         </div>
@@ -339,13 +345,14 @@
             </div>
             <div class="play__content__item">
                 <h5>
-                    Пони разговаривает и поет
+                    Пони разговаривает
                 </h5>
                 <div class="play__content__item__block play__content__item__block2 youtube play-video" data-video="https://www.youtube.com/watch?v=e9O04AXrN6o">
                     <img src="img/raster/ponyvideo2.png" alt="">
                 </div>
                 <p>
-                    Пони произносит более 20 фраз на русском языке и поет песенки: «Мамочка, я хочу кушать», «Я люблю тебя»
+                    Пони произносит более 20 фраз и слов на русском языке: «Мамочка, я хочу кушать»,
+                    « Мамочка, я люблю тебя».
                 </p>
             </div>
             <div class="play__content__item">
@@ -420,7 +427,8 @@
                     1. Гарантию если сломается
                 </h5>
                 <p>
-                    У нас только оригинальная продукция и мы лично отвечаем за ее качество. И если все же случится поломка позвоните нам по номеру 8 (495)648-67-51 или 8 800 707-02-63 и мы просто заменим игрушку! Гарантия на замену в течение 2 месяцев.
+                    У нас только оригинальная продукция и мы лично отвечаем за ее качество. И если все же случится поломка,  позвоните нам по номеру
+                    +7 (495)648-67-51 или 8 800 707-02-63 и мы просто заменим игрушку! Гарантия на замену в течение 2 месяцев.
                 </p>
             </div>
             <div class="present__content__item">
@@ -429,7 +437,8 @@
                     2. Гарантию если не понравится
                 </h5>
                 <p>
-                    После – Если Вам что-либо не понравится в вашей игрушке , позвоните нам по номеру …. в течение 14дней, и мы вернем Ваши деньги за 5 минут без каких-либо вопросов.
+                    Если Вам что-либо не понравится в вашей игрушке,  позвоните нам по номеру
+                    +7 (495)648-67-51 или 8 800 707-02-63  в течение 14 дней, и мы вернем Ваши деньги за 5 минут без каких-либо вопросов.
                 </p>
             </div>
         </div>
@@ -537,16 +546,24 @@
         </h2>
         <div class="certificate__content">
             <div class="certificate__content__item">
-
+                <a href="img/raster/sert1.jpg">
+                    <img src="img/raster/sert1.jpg" alt="">
+                </a>
             </div>
             <div class="certificate__content__item">
-
+                <a href="img/raster/sert2.jpg">
+                    <img src="img/raster/sert2.jpg" alt="">
+                </a>
             </div>
             <div class="certificate__content__item">
-
+                <a href="img/raster/sert3.jpg">
+                    <img src="img/raster/sert3.jpg" alt="">
+                </a>
             </div>
             <div class="certificate__content__item">
-
+                <a href="img/raster/sert4.jpg">
+                    <img src="img/raster/sert4.jpg" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -574,12 +591,9 @@
                 <li>
                     100 % гарантия возврата  денег . Если товар не устроит вас, мы вернем вам деньги
                 </li>
-                <li>
-                    Сделайте замечательный сюрприз и подарок вашему малышу
-                </li>
             </ul>
             <h5>
-                общая экономия покупки именно у вас 1200 руб.
+                ОБЩАЯ ЭКОНОМИЯ ПОКУПКТ ИМЕННО У ВАС 770 РУБ.
             </h5>
         </div>
     </div>
@@ -651,7 +665,7 @@
                 <div class="field">
                     <input type="text" name="address" placeholder="Адрес доставки" required>
                 </div>
-                <p class="p-price">3130 Р. <span>3900 Р</span>.</p>
+                <p class="p-price"><span class="pricepadding">3</span>130 Р. <span class="cherta">3900 Р</span>.</p>
                 <button class="button-overall" name="send">заказать</button>
             </form>
         </div>
@@ -830,11 +844,11 @@
     <div class="think__content">
         <div class="inner">
             <h5>
-                Заказывайте, экономьте до 1200 руб. и прикоснитесь к миру счастливых родителей!
+                ЗАКАЗЫВАЙТЕ, ЭКОНОМЬТЕ ДО 770 РУБ. и прикоснитесь к миру счастливых родителей!
             </h5>
             <h5 class="think__content-h5">
                 Почувствуйте новые эмоции, радость и смех вашего ребенка!
-                сделайте замечательный сюрприз и развивающий подарок вашему...
+                СДЕЛАЙТЕ  ЗАМЕЧАТЕЛЬНЫЙ СЮРПРИЗ И  РАЗВИВАЮЩИЙ ПОДАРОК ВАШЕЙ МАЛЫШКЕ
             </h5>
         </div>
         <div class="block-pravki">
@@ -856,7 +870,7 @@
                 <div class="field">
                     <input type="text" name="address" placeholder="Адрес доставки" required>
                 </div>
-                <p class="p-price">3130 Р. <span>3900 Р</span>.</p>
+                <p class="p-price"><span class="pricepadding">3</span>130 Р. <span class="cherta">3900 Р</span>.</p>
                 <button class="button-overall" name="send">заказать</button>
             </form>
         </div>
@@ -925,26 +939,26 @@
             <div class="footer__content__block">
                 <div class="footer__content__block__p">
                     <p>
-                        Веселая маленькая пони из мультфильма.  Пони- самая популярная игрушка для девочек. Проверено детьми! Меховая пони очень ласковая и умная, у нее красивые большие глазки и кудрявая пушистая грива, изображение воздушных шариков на одежде подчеркивает ее веселый нрав.
+                        Веселая маленькая пони из мультфильма. Пони - самая популярная игрушка для девочек. Проверено детьми! Меховая пони очень ласковая и умная, у нее красивые большие глазки и кудрявая пушистая грива, изображение воздушных шариков на одежде подчеркивает ее веселый нрав.
                     </p>
                     <p>
-                        Малышка только учится ходить. Ей нужна Ваша помощь и забота! Поставьте ее на ножки и она пойдет! !Смотри! Я умею ходить!” - скажет она. Пинки Пай нужно кормить, так как она может проголодаться, и тогда она может сказать: “Хочу кушать!” - ее можно покормить из тарелочки с ложечкой. Ей можно дать соску, чтобы успокоить. Ваш ребенок будет заботиться о ней, и вы получите смех, веселье и радостное настроение. Прикоснитесь к миру счастливых родителей!
+                        Малышка только учится ходить. Ей нужна Ваша помощь и забота! Поставьте ее на ножки и она пойдет! Смотри! Я умею ходить!” - скажет она. Пинки Пай нужно кормить, так как она может проголодаться, и тогда она может сказать: “Хочу кушать!” - ее можно покормить из тарелочки с ложечкой. Ей можно дать соску, чтобы успокоить. Ваш ребенок будет заботиться о ней, и вы получите смех, веселье и радостное настроение. Прикоснитесь к миру счастливых родителей!
                     </p>
                 </div>
                 <div class="footer__content__block__item-left youtube play-video" data-video="https://www.youtube.com/watch?v=wCcPztmKRpU"></div>
                 <div class="footer__content__block__item-right">
                     <p>
-                        Подарок Вашему ребенку? Улучшенная Пинки Пай, теперь она полностью русифицирована: “Привет, я Пинки Пай”!, “Возьми меня на ручки!”. Она знает около 20 слов
-                        и фраз и будет разговаривать со своей маленькой мамой.
-                        Как известно, развитие мышления у ребенка закладывается в самом раннем возрасте. Пони Пинки Пай научит ребенка говорить, выражать свои желания, логически мыслить. Игра с пони разовьет мелкую моторику рук, что, как экспертно
-                        доказано, способствует развитию мозга, помогает ребенку овладеть практическими повседневными навыками, проявит творческие наклонности, а также поможет успешно ориентироваться в детском коллективе.
-                        Вы можете приобрести Пинки Пай и все, что необходимо ей в комплекте: друзей пони, аксессуары, игрушечную мебель и посуду для ее маленького домика. В нашем интернет магазине Вы можете купить Пинки Пай по самым привлекательным ценам!
+                        Подарок Вашему ребенку? Улучшенная Пинки Пай, теперь она полностью русифицирована: “Привет, я Пинки Пай”! “Возьми меня на ручки!” Она знает около 20 слов и фраз и будет разговаривать со своей маленькой мамой. Как известно, развитие мышления у ребенка закладывается в самом раннем возрасте. Пони Пинки Пай научит ребенка говорить, выражать свои желания, логически мыслить. Игра с пони разовьет мелкую моторику рук, что, как экспертно доказано, способствует развитию мозга, помогает ребенку овладеть практическими повседневными навыками, проявит творческие наклонности, а также поможет успешно ориентироваться в детском коллективе. Вы можете приобрести Пинки Пай и все, что необходимо ей в комплекте: друзей пони, аксессуары и посуду для ее маленького домика. В нашем интернет магазине Вы можете купить Пинки Пай по самым привлекательным ценам!
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+
+
+
+
 
 
 
@@ -962,6 +976,5 @@
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>
 	<!-- Load Scripts End -->
-
 </body>
 </html>

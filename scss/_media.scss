@@ -710,6 +710,13 @@
   }
 }
 @media only screen and (max-width: 480px) {
+  .header__content__item__form-top__timer{
+    &>div{
+      min-width: unset!important;
+      max-width: 230px;
+      margin: 0 auto;
+    }
+  }
   body {
     .formblock {
       width: 380px;
